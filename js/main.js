@@ -1,10 +1,3 @@
-/* ===================================
---------------------------------------
-	Boto | Photography HTML Template
-	Version: 1.0
-	Copyright By: ColorLib
---------------------------------------
-======================================*/
 
 'use strict';
 
@@ -69,6 +62,8 @@ $(window).on('load', function() {
 	  if(textArray.length) setTimeout(type, newTextDelay + 250);
 	});
 
+	
+
 	/*-------------------
 		Blog Slider
 	-------------------*/
@@ -116,6 +111,41 @@ $(window).on('load', function() {
 			$(this).append('<div class="bar-inner" style="width:100%"></div>');
 		}
 	});
+
+	/*-----------------------------
+		Smooth Scroll Page Hash
+	-----------------------------*/
+	if (window.location.hash) {
+		var hash = window.location.hash;
+	
+		if ($(hash).length) {
+			$('html, body').animate({
+				scrollTop: $(hash).offset().top
+			}, 900, 'swing');
+		}
+	}
+
+	/* Sticky nav bar */
+
+	// When the user scrolls the page, execute myFunction
+	window.onscroll = function() {myFunction()};
+
+	// Get the header
+	var nav = document.getElementById("sticky");
+
+	// Get the offset position of the navbar
+	var sticky = nav.offsetTop;
+
+	// Add the sticky class to the header when you reach its scroll position. Remove "sticky" when you leave the scroll position
+	function myFunction() {
+	if (window.pageYOffset > sticky) {
+		nav.classList.add("sticky");
+	} else {
+		nav.classList.remove("sticky");
+	}
+	}
+	
+
 
 }(jQuery));
 

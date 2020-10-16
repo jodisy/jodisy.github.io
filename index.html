@@ -13,6 +13,7 @@
 	<link rel="stylesheet" href="css/slicknav.min.css"/>
 	<link rel="stylesheet" href="css/fresco.css"/>
 	<link rel="stylesheet" href="css/slick.css"/>
+	<link rel='stylesheet' href='animate.css' type='text/css'>
 
 	<!-- Main Stylesheets -->
 	<link rel="stylesheet" href="css/style.css"/>
@@ -25,7 +26,48 @@
 	</div>
 
 	<!-- Header Section -->
-	<header class="header">
+	<header class='header section-gradient'>
+		<nav class="navbar header-nav-01 fixed-top navbar-expand-lg sticky">
+			<div class='container'>
+				<a class='navbar-brand' href='#home'>Jodi Sy :)</a>
+				<!-- Mobile Stuff Toggle Thing -->
+				<button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarKeira" aria-controls="navbarKeira" aria-expanded="false" aria-label="Toggle navigation">
+					<span></span>
+					<span></span>
+					<span></span>
+				</button>
+				<div class="collapse navbar-collapse justify-content-end" id="navbarKeira">
+					<ul class="navbar-nav ml-auto">
+					  <li><a class="nav-link active" href="#home">Home</a></li>
+					  <li><a class="nav-link" href="#about">About</a></li>
+					  <li><a class="nav-link" href="#projects">Projects</a></li>
+					  <li><a class="nav-link" href="#blog">Blog</a></li>
+					  <li><a class="nav-link" href="#contact">Contact</a></li>
+					</ul>
+				  </div>
+			</div>
+		</nav>
+		<br>
+		<section class='section-padding' data-scroll-index="1">
+			<div class='container'>
+				<div class='row'>
+					<div class="col-sm-12 col-md-9 col-lg-9"> 
+						<h1>Hi, I'm Jodi Sy</h1>
+							<h3 style='font-weight: normal;'>I'm <span class='typed-text'></span><span class='cursor'>&nbsp;</span></h3>
+						<p id="text19">
+							Currently: <a href="#">@probe</a>
+						</p><br><br><br><br>
+						<div class="arrow bounce"></div><br><br><br><br><br>
+					</div>
+					<div class="col-lg-3 col-md-3"> 
+					</div>
+				</div>	
+			</div>	
+		</section>
+	</header>
+
+
+	<!-- <header class="header">
 		<div class="container-fluid">
 			<div class="row">
 				<div class="col-sm-4 col-md-3 order-2 order-sm-1">
@@ -37,10 +79,10 @@
 					</div>
 				</div>
 				<div class="col-sm-4 col-md-6 order-1  order-md-2 text-center">
-					<!-- stuff -->
+					 stuff 
 				</div>
 				<div class="col-sm-4 col-md-3 order-3 order-sm-3">
-					<!-- stuff -->
+					stuff 
 				</div>
 			</div>
 			<nav class="main__menu">
@@ -52,65 +94,175 @@
 				</ul>
 			</nav>
 		</div>
-	</header>
+	</header> -->
 	<!-- Header Section end -->
 
 	<!-- Hero Section -->
-	<div class='container'>
-	<div class='container'>
-		<div class="inner">
-			  <div class='circular-portrait'><img src="https://media.discordapp.net/attachments/625803540085997573/761845147230666792/image0.png?width=855&height=1139" alt='This is a picture of me :)'></div>
-		  <h2 id="text17">Hi, I'm <mark>Jodi Sy</mark>
-			<h3>I'm <span class='typed-text'></span><span class='cursor'>&nbsp;</span></h3>
-		  <p id="text19">
-			Currently: <a href="#">@probestem</a>
-		  </p>
-		  <p id="text02">
-			<p class='description'>What's up! I'm a 16 y/o from Toronto currently on explore mode & actively looking for opportunities to work at mission-driven startups. In my spare time, you can find me making digital art, writing about tech and personal growth, and drinking boba.
-				</p>
-				
+	<section class='section-padding bg-gray' data-scroll-index="2">
+		<div id='about' class='container'>
+			<div class='row'>
+				<div class="col-sm-12 col-md-9 col-lg-9"> 
+					<h2><span>&#128033; About Me</span></h2>
+					<div class='divider divider-1'></div>
+					<p>Hey! I'm Jodi Sy & I'm a 16 year old from Toronto currently on explore mode. My passions are ever-evolving but right now I'm super interested in entrepreneurship, product, and biotechnology. I've gained a lot of valuable outreach experience in the nonprofit space which I hope to leverage as I actively seek opportunities to work at mission-driven startups. In my spare time, I like drinking boba with my friends and making art! </p>
+					<a href="https://www.linkedin.com/in/jodisy/"><i class="fa fa-linkedin"></i></a> <a href="https://twitter.com/jodissy"><i class="fa fa-twitter"></i></a> <a href="https://www.youtube.com/channel/UCVCXaLzmYD2P31H5PbGxSdA"><i class="fa fa-youtube"></i></a> <a href="https://dribbble.com/jodisy"><i class="fa fa-dribbble"></i></a>
+				</div>
+				<div class='col-md-3 col-lg-3'>
+					<img style='border-radius: 150px;' src="https://cdn.discordapp.com/attachments/411281925106565132/762151000399151134/image0.jpg" alt='Picture of me' data-scroll-index="2">
 
-			<strong>Things I'm curious about</strong>
-			<li>Human longevity</li>
-			<li>Product & growth hacking</li>
-			<li>Kant's philosophy</li>
-			<li>Art & design</li>
-			<li>The creator economy</li>
-			<br>
-			<strong>My core values</strong>
-			<li>Empathy </li>
-			<li>Innovation</li>
-			<li>Authenticity</li>
-			<li>Honesty</li>
-			<li>Never settling for the status quo</li>
-		  </p>
-		  <p><a href="https://calendly.com/jodisy">» Let's chat if you wanna work together or get to know each other!</a></p>
+				</div>
+			</div>
+			
 		</div>
-	  </div>
+	</section>
 
+	<section class='section-padding'>
+		<div class='container'>
+			<h2>&#127765 My core values</h2><br>
+			<div class='row'>
+				<div class='col-md-4 col-sm-6'>
+					<div class='core-value-green text-center'>
+						<div class='core-value-text'><h4>&#128140; Compassion</h4>Understanding and appreciating that everyone looks at life through a unique lens.</div>
+					</div>
+				</div>
+				<div class="col-md-4 col-sm-6">
+					<div class='core-value-yellow text-center'>
+						<div class='core-value-text'><h4>&#127833; Authenticity</h4>You can't create your best impact if you're busy living someone else's life.</div>
+					</div>
+				</div>
+				<div class='col-md-4 col-sm-6'>
+					<div class='core-value-red text-center'>
+						<div class='core-value-text'><h4>&#128640; Never settle</h4>"That's the way it's always been" is a bad reason to continue doing anything. Be creative & innovate.</div>
+					</div>
+				</div>
+
+			<!-- Div Row End-->	
+			</div><br>
+			<div class='row'>
+				<div class='col-md-4 col-sm-6'>
+					<div class='core-value-yellow text-center'>
+						<div class='core-value-text'><h4>&#9994; Growth</h4>Pursuing projects that push you, self-reflecting, and embracing all feedback with open arms (even if it hurts!)</div>
+					</div>
+				</div>
+				<div class="col-md-4 col-sm-6">
+					<div class='core-value-red text-center'>
+						<div class='core-value-text'><h4>&#127912; Experiment</h4>Doing a lot and failing a lot to learn while the career risk is still low.</div>
+					</div>
+				</div>
+				<div class='col-md-4 col-sm-6'>
+					<div class='core-value-green text-center'>
+						<div class='core-value-text'><h4>&#128009; Self-agency</h4>Be the main character of your story.</div>
+					</div>
+			</div>
+			
+	</section>
+
+
+	
+	<section class='section-padding bg-gray' data-scroll-index="3">
+		<div id='projects' class='container'>
+			<h2>&#127854; What I've worked on </h2><br>
+			<div class='row'>
+				<div class='col-md-4 col-sm-6'>
+					<div class='single-service text-center'>
+						<a href='https://www.youtube.com/watch?v=8iGWWwUylaE'><img src='img/Breakthrough senescence thumbnail.png'></a><br><br>
+						<h5>Cell Senescence</h5><br>
+						<div class="service-overlay text-left">
+							<p>I researched how the buildup of senescent cells causes aging and created a video on this topic for the 2020 Breakthrough Junior Challenge. My video placed in the top 10% of all submissions worldwide.</p>
+							<a href=''><button type="button" class="btn btn-info text-center">Watch on YouTube</button></a>
+						</div>
+					</div>
+				</div>
+				<div class="col-md-4 col-sm-6">
+					<div class="single-service text-center" data-wow-delay="0.8s" style="visibility: visible; animation-delay: 0.8s; animation-name: fadeInUp;">
+						<img src='img/uuatoronto.png'><br><br>
+						<h5>President @ United Under Arts Toronto</h5>
+						<div class='service-overlay text-left'>
+							<p>During August, we hosted 12 online workshops that guided 135+ students towards learning a new art hobby or honing their craft. Currently, we're creating personalized playlists for senior homes and curating creative inspiration for Gen-Z.</p>
+						</div> 
+					</div>
+				</div>
+				<div class='col-md-4 col-sm-6'>
+					<div class='single-service text-left'>
+						<img src='img/Probe Circle Logo for Site.png'><br><br>
+						<h5>Founder & Exec. Director @ Probe</h5><br>
+						<div class='service-overlay text-left'>
+							<p>What started off as a side project has turned into a team of 20+ high school students working to demystify the major forces in science & technology shaping the world today. Through educational illustrations, virtual events, and videos, my team & I strive to make scientific innovation more accessible to Gen Z.</p>
+						</div>
+					</div>
+				</div>
+
+			<!-- Div Row End-->	
+			</div>
+			<div class='row'>
+				<div class="col-md-4 col-sm-6">
+					<div class="single-service text-center" data-wow-delay="0.8s" style="visibility: visible; animation-delay: 0.8s; animation-name: fadeInUp;">
+						<img src='img/Sketchbook tour thumbnail.PNG'><br><br>
+						<h5>Sketchbook Tour 2020</h5><br>
+						<div class='service-overlay text-left'>
+							<p>Take a quick peek through my sketchbook in this fun 1 min video :)</p>
+							<a href=''><button type="button" class="btn btn-info text-center">Watch on YouTube</button></a>
+						</div> 
+					</div>
+				</div>
+				<div class='col-md-4 col-sm-6'>
+					<div class='single-service text-center'>
+						<img src='https://cdn.dribbble.com/users/6062616/screenshots/14228289/media/6ac9b2dafae7f4b1d0eb084e3cde5e2e.png'><br><br>
+						<h5>Stock Market Landscapes</h5><br>
+						<div class='service-overlay text-left'>
+							<p>Inspired by the work of Gladys Estolas, I decided to hone my design skills by transforming otherwise dull stock market charts into pretty landscapes because people are inspired by beauty & wonder, not facts & figures. The above illustration depicts TWST from January-August.</p>
+						</div>
+					</div>
+				</div>
+				<div class='col-md-4 col-sm-6'>
+					<div class='single-service text-center'>
+						<img src='img/DAY illustration row SITE.png'><br><br>
+						<h5>Illustrator @ Dear Asian Youth</h5><br>
+						<div class='service-overlay text-left'>
+							<p>I illustrate social media posts and stickers for Dear Asian Youth to increase political engagement through education and to raise funds for the Black Lives Matter Movement.
+
+							</p>
+						</div>
+					</div>
+				</div>
+			</div>
+		</div>
+
+	</section>
+		<!-- Projects Div Container End -->
+	<section class='section-padding'>
+		<div id='blog' class='container'>
+			<h2>&#128395 Blog</h2><br>
+			<p>Under construction &#127959 In the meantime, read these: </hp>
+			<p><a href="https://www.notion.so/15-Things-I-Learned-at-15-368dcd6cce2f49568ef8bbf287289ef9" style='color: #f7797d;'>15 Things I learned at 15</a></p><p><a href="https://medium.com/@jodisy88/a-bite-sized-solution-to-a-global-pandemic-9bdac6a1462b" style='color: #f7797d;'>A Tiny Solution to a Global Pandemic</a></p>
+		</div>
+	</div>
+	</section>
+	<section class='section-padding bg-gray'>
+		<div id='contact' class='container'>
+			<h2>Let's get in touch!</h2>
+			<p><a href='mailto:jodisy88@gmail.com' style='color: #f7797d;'>Shoot me an email</a></p>
+			<p>Or follow me <a href='https://twitter.com/jodissy' style='color: #f7797d;'>on Twitter @jodissy</a></p>
+			<p>If you'd like to chat or catch up, feel free to schedule a call with me!</p>
+			<!-- Calendly inline widget begin -->
+			<div class="calendly-inline-widget" data-url="https://calendly.com/jodisy?hide_landing_page_details=1" style="min-width:320px;height:630px;"></div>
+			<script type="text/javascript" src="https://assets.calendly.com/assets/external/widget.js"></script>
+			<!-- Calendly inline widget end -->	
+		</div>
+	</section>
+		  
 	<!-- Hero Section end -->
 
-	<footer class="footer__section">
+	<footer class="footer__section section-padding">
 		<div class="footer__copyright__text">
 			Made with <i class="fa fa-heart" aria-hidden="true"></i> in Toronto 
 		</div>
 	</footer>
-	<!-- Footer Section 
-	<footer class="footer__section">
-		<div class="container">
-		 Link back to Colorlib can't be removed. Template is licensed under CC BY 3.0. 
-			<div class="footer__copyright__text">
-				<p> Copyright &copy; <script>document.write(new Date().getFullYear());</script> All rights reserved | This template is made with <i class="fa fa-heart" aria-hidden="true"></i> by <a href="https://colorlib.com" target="_blank">Colorlib</a></p>
-			</div>
-			Link back to Colorlib can't be removed. Template is licensed under CC BY 3.0. 
-		</div>
-	</footer>
-Footer Section end -->
-
 	<!--====== Javascripts & Jquery ======-->
 	<script src="js/vendor/jquery-3.2.1.min.js"></script>
-	<script src="js/jquery.slicknav.min.js"></script>
 	<script src="js/main.js"></script>
+	<script src="js/wow.min.js"></script>
+	<script src="js/wow.js"></script>
 
 	</body>
 </html>
