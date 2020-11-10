@@ -62,55 +62,6 @@ $(window).on('load', function() {
 	  if(textArray.length) setTimeout(type, newTextDelay + 250);
 	});
 
-	
-
-	/*-------------------
-		Blog Slider
-	-------------------*/
-	$('.blog__slider').slick({
-		dots: false,
-		infinite: true,
-		speed: 300,
-		arrows: false,
-		centerMode: true,
-		centerPadding: '190px',
-		slidesToShow: 2,
-		autoplay: true,
-		pauseOnHover:false,
-		responsive: [
-			{
-				breakpoint: 991,
-				settings: {
-				centerPadding: '0',
-				slidesToShow: 2,
-				slidesToScroll: 2
-				}
-			},
-			{
-				breakpoint: 480,
-				settings: {
-					centerMode: false,
-					slidesToShow: 1,
-					slidesToScroll: 1,
-					centerPadding: '0',
-				}
-			}
-		]
-	});
-
-	/*-------------------
-		Progress Bars
-	-------------------*/
-	$('.progress-bar-style').each(function() {
-		var progress = $(this).data("progress");
-		var prog_width = progress + '%';
-		if (progress <= 100) {
-			$(this).append('<div class="bar-inner" style="width:' + prog_width + '"></div>');
-		}
-		else {
-			$(this).append('<div class="bar-inner" style="width:100%"></div>');
-		}
-	});
 
 	/*-----------------------------
 		Smooth Scroll Page Hash
@@ -144,8 +95,6 @@ $(window).on('load', function() {
 		nav.classList.remove("sticky");
 	}
 	}
-	
-
 
 }(jQuery));
 
