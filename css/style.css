@@ -68,7 +68,7 @@ span {
 	font-weight: inherit;
 }
 img {
-	width: 100%;
+	width: 50%;
 	height: auto;
 	vertical-align: middle;
 }
@@ -97,7 +97,7 @@ a:focus {
 
 a {
 	font-family: inherit;
-	color: inherit;
+	color: #FAAAD1;
 }
 
 ul,
@@ -146,20 +146,26 @@ ol {
 .value {
 	position: relative;
 	overflow: hidden;
-	padding: 20px 20px 35px;
+	padding: 40px 40px 65px;
     border-radius: 10px;
-    height: 130px;
+    -webkit-transition: 0.4s;
+    transition: 0.4s;
+    height: 145px;
 	width: auto;
-	text-align: center;
 	background-color: #FFEEEE;
 }
 
 .value:hover {
 	transform: scale(1.035, 1.035);
-	filter: contrast(90%);
-	filter: drop-shadow(30px);
+}
 
+.value:hover::after {
+	opacity: 1;
 
+}
+
+.section-padding {
+	padding: 25px 0;
 }
 
 .wow {

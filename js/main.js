@@ -95,6 +95,10 @@ $(window).on('load', function() {
 		nav.classList.remove("sticky");
 	}
 	}
+	// Force to top
+	$(document).ready(function(){
+		$(this).scrollTop(0);
+	});
 
 }(jQuery));
 
