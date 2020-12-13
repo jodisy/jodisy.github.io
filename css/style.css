@@ -158,11 +158,10 @@ ol {
 .value {
 	position: relative;
 	overflow: hidden;
-	padding: 40px 40px 65px;
+	padding: 40px 40px 0px;
     border-radius: 10px;
     -webkit-transition: 0.4s;
     transition: 0.4s;
-    height: 145px;
 	width: auto;
 	background-color: #FFEEEE;
 }
