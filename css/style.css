@@ -78,8 +78,8 @@ span {
 	font-weight: inherit;
 }
 img {
-	width: 50%;
-	height: auto;
+	width: 25%;
+	height: 25%;
 	vertical-align: middle;
 }
 
@@ -98,6 +98,7 @@ button:focus,
 textarea:focus {
 	outline: none;
 }
+
 
 a:hover,
 a:focus {
@@ -158,11 +159,11 @@ ol {
 .value {
 	position: relative;
 	overflow: hidden;
-	padding: 40px 40px 65px;
+	padding: 40px 40px 0px;
     border-radius: 10px;
     -webkit-transition: 0.4s;
     transition: 0.4s;
-    height: 145px;
+    height: auto;
 	width: auto;
 	background-color: #FFEEEE;
 }
@@ -238,9 +239,12 @@ ol {
   }
   /* Add a color to the active/current link */
   .topnav a.active {
-	font-weight:700;
+	text-decoration: underline;
+	text-underline-offset: 4px;
+	text-decoration-thickness: 0.125em;
   }
 
+  
 /* Mobile Toggle */
 @media (min-width: 992px) {
 	.navbar-expand-lg .navbar-toggler {
@@ -371,5 +375,5 @@ button {
 }
 
 .footer__copyright__text a:hover {
-	color: #8DB952;
+	color: #ffb9b9;
 }
