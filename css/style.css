@@ -1,10 +1,10 @@
 @import url("https://fonts.googleapis.com/css2?family=Arimo:ital,wght@0,400;0,700;1,400;1,700&display=swap");
-
+@import url('https://fonts.googleapis.com/css2?family=Work+Sans&display=swap');
 
 html,
 body {
 	background-color: #FFEEEE;
-	font-family: -apple-system,BlinkMacSystemFont,"Segoe UI",Roboto,"Helvetica Neue",Arial,sans-serif,"Apple Color Emoji","Segoe UI Emoji","Segoe UI Symbol";
+	font-family: Inter, -apple-system,BlinkMacSystemFont,"Segoe UI",Roboto,"Helvetica Neue",Arial,sans-serif,"Apple Color Emoji","Segoe UI Emoji","Segoe UI Symbol";
 	
 }
 
@@ -16,7 +16,7 @@ h5,
 h6 {
 	margin: 0;
 	color: rgb(160, 132, 141);
-	font-family: inherit;
+	font-family: 'Work Sans';
 }
 
 h1 {
@@ -40,16 +40,34 @@ h4 {
 
 h5 {
 	font-size: 18px;
+	text-decoration: underline;
 }
 
 h6 {
 	font-size: 16px;
 }
+
+
+@font-face {
+	font-family: Inter;
+	font-style:  normal;
+	font-weight: 100;
+	font-display: swap;
+	src: url(../fonts/Inter-Regular.woff);
+}
+
+@font-face {
+	font-family: Inter Bold;
+	font-style:  bold;
+	font-display: swap;
+	src: url(../fonts/Inter-Bold.woff);
+}
+
 p,
 li{
-	font-size: 16px;
+	font-size: 18px;
 	font-family: inherit;
-	color: #7E858B;
+	color: rgb(160, 132, 141);
 	line-height: 1.8;
 }
 
@@ -78,9 +96,17 @@ span {
 	font-weight: inherit;
 }
 img {
-	width: 25%;
-	height: 25%;
+	max-width: 90%;
 	vertical-align: middle;
+}
+
+.img {
+	width: auto;
+	height: auto;
+}
+
+.bookcontainer {
+	
 }
 
 #container {
@@ -91,6 +117,26 @@ img {
 
 }
 
+#blogcontainer {
+	width: 90%;
+    max-width: 700px;
+	margin: 3rem auto;
+	padding: 0.5rem 0;
+}
+
+.emojiheader {
+	position: relative;
+	top: 0;
+	-webkit-transition: 0.4s;
+    transition: top ease 0.4s;
+}
+.emojiheader:hover {
+	top: -10px;
+
+}
+.emojiheader::after {
+	opacity: 1;
+}
 
 input:focus,
 select:focus,
@@ -159,13 +205,13 @@ ol {
 .value {
 	position: relative;
 	overflow: hidden;
-	padding: 40px 40px 0px;
+	padding: 30px 40px 0px;
     border-radius: 10px;
     -webkit-transition: 0.4s;
     transition: 0.4s;
     height: auto;
 	width: auto;
-	background-color: #FFEEEE;
+	background-color: #ffe3e3;
 }
 
 .value:hover {
@@ -180,6 +226,8 @@ ol {
 .section-padding {
 	padding: 25px 0;
 }
+
+.section-padding
 
 .wow {
 	visibility: hidden;
@@ -224,13 +272,14 @@ ol {
   
   /* Style the links inside the navigation bar */
   .topnav a {
-	float: right;
 	color:  rgb(160, 132, 141);
-	text-align: center;
+	text-align: middle;
 	padding: 14px 16px;
 	text-decoration: none;
 	font-size: 17px;
 	position: relative;
+	float: right;
+
   }
   
   /* Change the color of links on hover */
@@ -240,6 +289,7 @@ ol {
   /* Add a color to the active/current link */
   .topnav a.active {
 	text-decoration: underline;
+	color: #ffb9b9;
 	text-underline-offset: 4px;
 	text-decoration-thickness: 0.125em;
   }
@@ -357,23 +407,31 @@ button {
  -----------------------*/
 
 .footer__copyright__text {
+	font-family: inherit;
 	text-align: center;
 	padding-bottom: 5px;
+	color: rgb(160, 132, 141);
+
 }
 
 .footer__copyright__text p {
+	font-family: inherit;
 	font-size: 16px;
 }
 
 .footer__copyright__text i {
 	color: #d32a2a;
+	font-family: inherit;
+
 }
 
 .footer__copyright__text a {
-	color: #7E858B;
+	font-family: inherit;
+	color: rgb(160, 132, 141);
 	text-decoration: underline;
 }
 
 .footer__copyright__text a:hover {
+	font-family: inherit;
 	color: #ffb9b9;
 }
