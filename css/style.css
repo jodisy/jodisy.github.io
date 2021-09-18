@@ -3,7 +3,7 @@
 
 html,
 body {
-	background-color: #FFEEEE;
+	background-color: #F8F1D4;
 	font-family: Inter, -apple-system,BlinkMacSystemFont,"Segoe UI",Roboto,"Helvetica Neue",Arial,sans-serif,"Apple Color Emoji","Segoe UI Emoji","Segoe UI Symbol";
 	
 }
@@ -15,12 +15,12 @@ h4,
 h5,
 h6 {
 	margin: 0;
-	color: rgb(160, 132, 141);
+	color:#241f19;
 	font-family: 'Work Sans';
 }
 
 h1 {
-	font-size: 42px;
+	font-size: 78px;
 	font-weight: 700;
 }
 
@@ -67,7 +67,7 @@ p,
 li{
 	font-size: 18px;
 	font-family: inherit;
-	color: rgb(160, 132, 141);
+	color: #241f19;
 	line-height: 1.8;
 }
 
@@ -77,17 +77,17 @@ li{
 	line-height: 1.8;
 }
 .description em {
-	color: #FAAAD1;
+	color: #ab663b;
 	font-style: normal;
 }
 
 strong {
-	color: #ffb9b9;
+	color: #ab663b;
 	-webkit-transition: 0.4s;
     transition: 0.4s;
 }
 strong:hover {
-	color: #ff7c7c;
+	color: #ab663b;
 
 }
 
@@ -96,7 +96,7 @@ span {
 	font-weight: inherit;
 }
 img {
-	max-width: 25%;
+	max-width: 50%;
 	vertical-align: middle;
 }
 
@@ -150,11 +150,13 @@ a:hover,
 a:focus {
 	text-decoration: none;
 	outline-style: none;
+	color: #c96736;
+
 }
 
 a {
 	font-family: inherit;
-	color: #ff7c7c;
+	color: inherit;
 }
 
 ul,
@@ -268,23 +270,24 @@ ol {
 /* Header stuff */
 .topnav {
 	overflow: hidden;
+	font: inherit;
   }
   
   /* Style the links inside the navigation bar */
   .topnav a {
-	color:  rgb(160, 132, 141);
+	color:  inherit;
 	text-align: middle;
 	padding: 14px 16px;
 	text-decoration: none;
 	font-size: 17px;
 	position: relative;
-	float: right;
+	float: left;
 
   }
   
   /* Change the color of links on hover */
-  .topnav a:hover {
-	color: #ffb9b9;
+  /*.topnav a:hover {
+	color: #c96736; */
   }
   /* Add a color to the active/current link */
   .topnav a.active {
@@ -434,4 +437,10 @@ button {
 .footer__copyright__text a:hover {
 	font-family: inherit;
 	color: #ffb9b9;
+}
+
+.dark-mode {
+	background-color: #241f19;
+	color: #F8F1D4;
+
 }
