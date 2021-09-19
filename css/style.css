@@ -16,7 +16,7 @@ h5,
 h6 {
 	margin: 0;
 	color:#241f19;
-	font-family: 'Work Sans';
+	font-family: Fivo Sans Modern, "Segoe UI",Roboto,"Helvetica Neue",Arial,sans-serif,"Apple Color Emoji","Segoe UI Emoji","Segoe UI Symbol";;
 }
 
 h1 {
@@ -61,6 +61,13 @@ h6 {
 	font-style:  bold;
 	font-display: swap;
 	src: url(../fonts/Inter-Bold.woff);
+}
+
+@font-face {
+	font-family: Fivo Sans Modern;
+	font-style: normal;
+	font-display: swap;
+	src: url(../fonts/fivosansmodern-regular-webfont.woff)
 }
 
 p,
@@ -405,39 +412,6 @@ button {
 	}
 }
 
-/*---------------------
-   Footer section
- -----------------------*/
-
-.footer__copyright__text {
-	font-family: inherit;
-	text-align: center;
-	padding-bottom: 5px;
-	color: rgb(160, 132, 141);
-
-}
-
-.footer__copyright__text p {
-	font-family: inherit;
-	font-size: 16px;
-}
-
-.footer__copyright__text i {
-	color: #d32a2a;
-	font-family: inherit;
-
-}
-
-.footer__copyright__text a {
-	font-family: inherit;
-	color: rgb(160, 132, 141);
-	text-decoration: underline;
-}
-
-.footer__copyright__text a:hover {
-	font-family: inherit;
-	color: #ffb9b9;
-}
 
 .dark-mode {
 	background-color: #241f19;
