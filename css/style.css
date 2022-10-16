@@ -1,10 +1,11 @@
 @import url("https://fonts.googleapis.com/css2?family=Arimo:ital,wght@0,400;0,700;1,400;1,700&display=swap");
 @import url('https://fonts.googleapis.com/css2?family=Work+Sans&display=swap');
+@import url('https://fonts.googleapis.com/css?family=Lora');
 
 html,
 body {
-	background-color: #F8F1D4;
-	font-family: Inter, -apple-system,BlinkMacSystemFont,"Segoe UI",Roboto,"Helvetica Neue",Arial,sans-serif,"Apple Color Emoji","Segoe UI Emoji","Segoe UI Symbol";
+	background-color: #f7f2ec;
+	font-family: Lora, -apple-system,BlinkMacSystemFont,"Segoe UI",Roboto,"Helvetica Neue",Arial,serif,"Apple Color Emoji","Segoe UI Emoji","Segoe UI Symbol";
 	
 }
 
@@ -72,20 +73,10 @@ h6 {
 
 p,
 li{
-	font-size: 18px;
+	font-size: 24px;
 	font-family: inherit;
 	color: #241f19;
 	line-height: 1.8;
-}
-
-.description {
-	font-size: 16px;
-	color: #7E858B;
-	line-height: 1.8;
-}
-.description em {
-	color: #ab663b;
-	font-style: normal;
 }
 
 strong {
@@ -112,9 +103,6 @@ img {
 	height: auto;
 }
 
-.bookcontainer {
-	
-}
 
 #container {
     width: 90%;
@@ -122,27 +110,6 @@ img {
 	margin: 3rem auto;
 	padding: 0.5rem 0;
 
-}
-
-#blogcontainer {
-	width: 90%;
-    max-width: 700px;
-	margin: 3rem auto;
-	padding: 0.5rem 0;
-}
-
-.emojiheader {
-	position: relative;
-	top: 0;
-	-webkit-transition: 0.4s;
-    transition: top ease 0.4s;
-}
-.emojiheader:hover {
-	top: -10px;
-
-}
-.emojiheader::after {
-	opacity: 1;
 }
 
 input:focus,
@@ -153,17 +120,19 @@ textarea:focus {
 }
 
 
-a:hover,
-a:focus {
-	text-decoration: none;
-	outline-style: none;
-	color: #c96736;
-
-}
-
 a {
+	text-decoration-style: dotted;
 	font-family: inherit;
 	color: inherit;
+}
+
+a:hover,
+a:focus {
+	text-decoration-style: underline;
+	outline-style: none;
+	color: #662619
+	;
+
 }
 
 ul,
@@ -189,48 +158,6 @@ ol {
     margin-left: -15px;
 }
 
-.box {
-	position: relative;
-	overflow: hidden;
-	padding: 40px 40px 65px;
-    border-radius: 10px;
-    -webkit-transition: 0.4s;
-    transition: 0.4s;
-    height: 100px;
-	width: auto;
-	background-color: #ffffff;
-}
-
-.box:hover {
-	transform: scale(1.035, 1.035);
-	box-shadow: #673ab7;
-}
-
-.box:hover::after {
-	opacity: 1;
-	
-}
-
-.value {
-	position: relative;
-	overflow: hidden;
-	padding: 30px 40px 0px;
-    border-radius: 10px;
-    -webkit-transition: 0.4s;
-    transition: 0.4s;
-    height: auto;
-	width: auto;
-	background-color: #ffe3e3;
-}
-
-.value:hover {
-	transform: scale(1.035, 1.035);
-}
-
-.value:hover::after {
-	opacity: 1;
-
-}
 
 .section-padding {
 	padding: 25px 0;
@@ -240,181 +167,4 @@ ol {
 
 .wow {
 	visibility: hidden;
-}
-
-/* Tabs */
-.tab {
-	overflow: hidden;
-	float: left;
-	background-color: none;
-}
-.tab button {
-  float: left;
-  border: none;
-  outline: none;
-  cursor: pointer;
-  padding: 28px 32px;
-  transition: 0.3s;
-  background-color: none;
-}
-.tab button:hover {
-	color: pink;
-  }
-  
-  /* Create an active/current tablink class */
-.tab button.active {
-	color: red;
-  }
-  
-  /* Style the tab content */
-.tabcontent {
-	display: none;
-	padding: 6px 12px;
-	border: 1px solid ;
-	border-top: none;
-  }
-
-/* Header stuff */
-.topnav {
-	overflow: hidden;
-	font: inherit;
-  }
-  
-  /* Style the links inside the navigation bar */
-  .topnav a {
-	color:  inherit;
-	text-align: middle;
-	padding: 14px 16px;
-	text-decoration: none;
-	font-size: 17px;
-	position: relative;
-	float: left;
-
-  }
-  
-  /* Change the color of links on hover */
-  /*.topnav a:hover {
-	color: #c96736; */
-  }
-  /* Add a color to the active/current link */
-  .topnav a.active {
-	text-decoration: underline;
-	color: #ffb9b9;
-	text-underline-offset: 4px;
-	text-decoration-thickness: 0.125em;
-  }
-
-  
-/* Mobile Toggle */
-@media (min-width: 992px) {
-	.navbar-expand-lg .navbar-toggler {
-		display: none;
-	}
-}
-
-[type=reset], [type=submit], button, html [type=button] {
-    -webkit-appearance: button;
-}
-.navbar-toggler {
-    border: none;
-    padding: 10px 6px;
-    outline: none !important;
-}
-.navbar-toggler {
-    padding: .25rem .75rem;
-    font-size: 1.25rem;
-    line-height: 1;
-    background: 0 0;
-    border: 1px solid transparent;
-    border-radius: .25rem;
-}
-button, select {
-    text-transform: none;
-}
-button, input {
-    overflow: visible;
-}
-button, input, optgroup, select, textarea {
-    margin: 0;
-    font-family: inherit;
-    font-size: inherit;
-    line-height: inherit;
-}
-button {
-    border-radius: 0;
-}
-[role=button], a, area, button, input:not([type=range]), label, select, summary, textarea {
-    -ms-touch-action: manipulation;
-    touch-action: manipulation;
-}
-
-/* Preloder */
-
-#preloder {
-	position: fixed;
-	width: 100%;
-	height: 100%;
-	top: 0;
-	left: 0;
-	z-index: 999999;
-	background: #ffffff;
-}
-
-.loader {
-	width: 40px;
-	height: 40px;
-	position: absolute;
-	top: 50%;
-	left: 50%;
-	margin-top: -13px;
-	margin-left: -13px;
-	border-radius: 60px;
-	animation: loader 0.8s linear infinite;
-	-webkit-animation: loader 0.8s linear infinite;
-}
-
-@keyframes loader {
-	0% {
-		-webkit-transform: rotate(0deg);
-		transform: rotate(0deg);
-		border: 4px solid #f44336;
-		border-left-color: transparent;
-	}
-	50% {
-		-webkit-transform: rotate(180deg);
-		transform: rotate(180deg);
-		border: 4px solid #673ab7;
-		border-left-color: transparent;
-	}
-	100% {
-		-webkit-transform: rotate(360deg);
-		transform: rotate(360deg);
-		border: 4px solid #f44336;
-		border-left-color: transparent;
-	}
-}
-
-@-webkit-keyframes loader {
-	0% {
-		-webkit-transform: rotate(0deg);
-		border: 4px solid #f44336;
-		border-left-color: transparent;
-	}
-	50% {
-		-webkit-transform: rotate(180deg);
-		border: 4px solid #673ab7;
-		border-left-color: transparent;
-	}
-	100% {
-		-webkit-transform: rotate(360deg);
-		border: 4px solid #f44336;
-		border-left-color: transparent;
-	}
-}
-
-
-.dark-mode {
-	background-color: #241f19;
-	color: #F8F1D4;
-
 }
